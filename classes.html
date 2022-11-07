@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .city{
+            background-color: tomato;
+            color: black;
+            border: 2px solid black;
+            margin: 0px;
+            padding: 1px;
+        }
+        .note{
+            font-size: 120%;
+            color: red;
+        }
+        .main{
+            text-align: center;
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital ò Englnd </p>
+    </div> 
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France</p>
+    </div>
+
+    <h1>My <span class="note">Improtant</span>heading</h1>
+    <p>This is some <span class="note">Improtant</span>text.</p>
+
+
+    <h2 class="city">London</h2>
+    <p> London is the capital of England</p>
+    <h2 class="city main">Londonn</h2>
+
+
+
+    <-- javacsip-->
+    <h2>Sử dụng thuộc tính javaScript</h2>
+    <p>Nhấp vào nút để ấn tất cả</p>
+    <button onclick="myFuncion ()">Ẩn các phần tử</button>
+    <h2 class="city">Luân Đôn</h2>
+    <p>Luân Đôn là thủ đô của nước Anh</p>
+    <h2 class="city">Paris</h2>
+    <p>Paris là thủ đo của nước pháp</p>
+    <script>
+        function myFuncion() {
+            var x = document.getElementsByClassName("city");
+            for (var i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
